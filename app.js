@@ -2,6 +2,8 @@ const express=require("express");
 const nodemailer=require("nodemailer");
 const database=require("better-sqlite3");
 require("dotenv").config();
+console.log("EMAIL_USER exists:", !!process.env.EMAIL_USER);
+console.log("EMAIL_PASS exists:", !!process.env.EMAIL_PASS);
 
 const app=express();
 app.use(express.json());
